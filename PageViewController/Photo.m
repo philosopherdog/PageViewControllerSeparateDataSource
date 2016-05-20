@@ -16,6 +16,8 @@
     return self;
 }
 
+// I need to override init and call the designated initializer
+// Here I'm crashing if someone calls init, because there's no point in creating a Photo object without an image.
 - (instancetype)init {
     NSAssert(NO, @"Call the designated initializer");
     return [self initWithImageNamed:nil];

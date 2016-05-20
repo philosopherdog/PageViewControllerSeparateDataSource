@@ -9,6 +9,7 @@
 @import UIKit;
 
 @interface Photo : NSObject
+// I'm explicitly declaring this custom init as the designated initializer
 - (instancetype)initWithImageNamed:(NSString *)name NS_DESIGNATED_INITIALIZER;
 @property (nonatomic) UIImage *image;
 @end
